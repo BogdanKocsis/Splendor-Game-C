@@ -1,0 +1,14 @@
+1. Database of Cards - Noble & Expansions (Bogdy)
+- 3 fisiere Expansion [x]
+- 1 fisier Nobili[x]
+- ordine: GreenEmerald, BlueSapphire, WhiteDiamond, BlackOnyx, RedRuby[x]
+- ce facem cu prestigePoints al cartilor
+
+2. TokenPile implementation (Eugen)
+- vector Token
+- drawToken
+
+3. Hand implementation (Eugen)
+- array de pointer ICard
+
+4. Add move/copy constructor, operator= for ExpansionCard, NobleCard, Token

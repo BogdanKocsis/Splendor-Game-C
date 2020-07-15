@@ -1,0 +1,10 @@
+Bogdan 5
+Andrei 4
+Adrian 6
+Teodor 3
+Bianca 1
+Adina 1
+Alexandra 4
+Raluca 0
+Eugen 2
+Claudiu 1

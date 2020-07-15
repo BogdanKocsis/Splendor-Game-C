@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <ProjectGuid>{F1C35720-230A-464F-94B9-76ADB755C6D1}</ProjectGuid>
+    <RootNamespace>Splendor</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(SolutionDir)\external\SFML-2.5.1\include</AdditionalIncludeDirectories>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <PreprocessorDefinitions>SFML_STATIC;_MBCS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <AdditionalLibraryDirectories>$(SolutionDir)\external\SFML-2.5.1\lib</AdditionalLibraryDirectories>
+      <AdditionalDependencies>freetype.lib;winmm.lib;opengl32.lib;ws2_32.lib;openal32.lib;flac.lib;vorbisenc.lib;vorbisfile.lib;vorbis.lib;ogg.lib;sfml-system-s-d.lib;sfml-window-s-d.lib;sfml-graphics-s-d.lib;sfml-audio-s-d.lib;sfml-network-s-d.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(SolutionDir)\external\SFML-2.5.1\include</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>SFML_STATIC;_MBCS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalLibraryDirectories>$(SolutionDir)\external\SFML-2.5.1\lib</AdditionalLibraryDirectories>
+      <AdditionalDependencies>freetype.lib;winmm.lib;opengl32.lib;ws2_32.lib;openal32.lib;flac.lib;vorbisenc.lib;vorbisfile.lib;vorbis.lib;ogg.lib;sfml-system-s.lib;sfml-window-s.lib;sfml-graphics-s.lib;sfml-audio-s.lib;sfml-network-s.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="Board.cpp" />
+    <ClCompile Include="CardDAO.cpp" />
+    <ClCompile Include="CircCollider.cpp" />
+    <ClCompile Include="Collider.cpp" />
+    <ClCompile Include="Hand.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="Network.cpp" />
+    <ClCompile Include="NetworkPacket.cpp" />
+    <ClCompile Include="Player.cpp" />
+    <ClCompile Include="RectCollider.cpp" />
+    <ClCompile Include="SoundSystem.cpp" />
+    <ClCompile Include="UIButton.cpp" />
+    <ClCompile Include="Deck.cpp" />
+    <ClCompile Include="ExpansionCard.cpp" />
+    <ClCompile Include="GamePieces.cpp" />
+    <ClCompile Include="Randomizer.cpp" />
+    <ClCompile Include="Token.cpp" />
+    <ClCompile Include="ICard.cpp" />
+    <ClCompile Include="IToken.cpp" />
+    <ClCompile Include="NobleCard.cpp" />
+    <ClCompile Include="PregameSetup.cpp" />
+    <ClCompile Include="SessionsManager.cpp" />
+    <ClCompile Include="Splendor.cpp" />
+    <ClCompile Include="UICard.cpp" />
+    <ClCompile Include="UIHandPanel.cpp" />
+    <ClCompile Include="UIHResourcesPanel.cpp" />
+    <ClCompile Include="UIHTokensPanel.cpp" />
+    <ClCompile Include="UIInfoPanel.cpp" />
+    <ClCompile Include="UICardsRowPanel.cpp" />
+    <ClCompile Include="UILeaderboardSession.cpp" />
+    <ClCompile Include="UIPlayerPanel.cpp" />
+    <ClCompile Include="UIPlayersPanel.cpp" />
+    <ClCompile Include="UIResource.cpp" />
+    <ClCompile Include="UISelectedCard.cpp" />
+    <ClCompile Include="UISelectorBox.cpp" />
+    <ClCompile Include="UIGameSession.cpp" />
+    <ClCompile Include="UIMainMenuSession.cpp" />
+    <ClCompile Include="UIOptionsPanel.cpp" />
+    <ClCompile Include="UIPanel.cpp" />
+    <ClCompile Include="UIPreGameSession.cpp" />
+    <ClCompile Include="UISelector.cpp" />
+    <ClCompile Include="UISettingsSession.cpp" />
+    <ClCompile Include="UIText.cpp" />
+    <ClCompile Include="UIToken.cpp" />
+    <ClCompile Include="UITokenAlertPanel.cpp" />
+    <ClCompile Include="UITutorialSession.cpp" />
+    <ClCompile Include="UIVTokensPanel.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Board.h" />
+    <ClInclude Include="CardDAO.h" />
+    <ClInclude Include="CircCollider.h" />
+    <ClInclude Include="Collider.h" />
+    <ClInclude Include="Hand.h" />
+    <ClInclude Include="Network.h" />
+    <ClInclude Include="NetworkPacket.h" />
+    <ClInclude Include="Player.h" />
+    <ClInclude Include="rapidxml.hpp" />
+    <ClInclude Include="rapidxml_iterators.hpp" />
+    <ClInclude Include="rapidxml_print.hpp" />
+    <ClInclude Include="rapidxml_utils.hpp" />
+    <ClInclude Include="RectCollider.h" />
+    <ClInclude Include="SoundSystem.h" />
+    <ClInclude Include="UIButton.h" />
+    <ClInclude Include="Deck.h" />
+    <ClInclude Include="ExpansionCard.h" />
+    <ClInclude Include="GamePieces.h" />
+    <ClInclude Include="Randomizer.h" />
+    <ClInclude Include="Token.h" />
+    <ClInclude Include="ICard.h" />
+    <ClInclude Include="IToken.h" />
+    <ClInclude Include="NobleCard.h" />
+    <ClInclude Include="PregameSetup.h" />
+    <ClInclude Include="SessionsManager.h" />
+    <ClInclude Include="UICard.h" />
+    <ClInclude Include="UIHandPanel.h" />
+    <ClInclude Include="UIHResourcesPanel.h" />
+    <ClInclude Include="UIHTokensPanel.h" />
+    <ClInclude Include="UIInfoPanel.h" />
+    <ClInclude Include="UICardsRowPanel.h" />
+    <ClInclude Include="UILeaderboardSession.h" />
+    <ClInclude Include="UIPlayerPanel.h" />
+    <ClInclude Include="UIPlayersPanel.h" />
+    <ClInclude Include="UIResource.h" />
+    <ClInclude Include="UISelectedCard.h" />
+    <ClInclude Include="UISelectorBox.h" />
+    <ClInclude Include="UIColors.h" />
+    <ClInclude Include="UIGameSession.h" />
+    <ClInclude Include="UIMainMenuSession.h" />
+    <ClInclude Include="UIOptionsPanel.h" />
+    <ClInclude Include="UIPanel.h" />
+    <ClInclude Include="UIPreGameSession.h" />
+    <ClInclude Include="UISelector.h" />
+    <ClInclude Include="UISettingsSession.h" />
+    <ClInclude Include="UIText.h" />
+    <ClInclude Include="UIToken.h" />
+    <ClInclude Include="UITokenAlertPanel.h" />
+    <ClInclude Include="UITutorialSession.h" />
+    <ClInclude Include="UIVTokensPanel.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SplendorTests\SplendorTests.vcxproj">
+      <Project>{0f31694c-ba26-40a0-9f2d-065e230aa1eb}</Project>
+    </ProjectReference>
+    <Xml Include="..\external\Cards Database\CardsDatabase.xml" />
+    <ProjectReference Include="..\Logging\Logging.vcxproj">
+      <Project>{219892e1-9231-433c-8ec8-a3a377eb4dda}</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
